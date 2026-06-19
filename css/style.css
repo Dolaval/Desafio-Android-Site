@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Android';
+    src: url('/pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* cores usadas:
+    verde claro: #3CD782
+    vede escuro: #1A5C38
+    #84E1AD
+*/
+*{
+
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    max-width: 100%; /* Impeça que a imagem seja maior que o container onde ela está */
+    height: auto;    /* Mantém a proporção correta de altura para não achatar a foto */
+    display: block;  /* Remove um espacinho em branco que o HTML deixa abaixo de imagens */
+    margin:auto;
+}   
+strong{
+    color: #187241;
+}
+body{
+    background-color: #84E1AD;
+}
+header{
+    width: 100%;
+    
+
+    background-image: linear-gradient(to bottom, #3CD782, #1A5C38);
+    font-family: 'antonio', sans-serif;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.374);
+
+}
+header > h1{
+
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    
+    
+}
+header > p{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+header> nav > ul > li{
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+header> nav > ul > li > a{ 
+    text-decoration: none;
+   color: #ffffff;
+    
+}
+header> nav > ul > li > a:hover{
+    color: #3CD782;
+    transition: 0.3s;
+    background-color: #1A5C38;
+    padding: 10px;
+    border-radius: 5px;
+}
+main{
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    
+   
+}
+main{
+    justify-content: center;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+h2{
+    font-family: 'Android', sans-serif;
+    color:#187241;
+}
+
+#video {
+    max-width: 100%;       /* Impede que o container passe da largura da página */
+    margin: 20px auto;     /* Adiciona margem acima/abaixo e centraliza o bloco */
+    display: flex;
+    justify-content: center;
+}
+#video > iframe {
+    width: 100%;           /* Força o vídeo a ocupar toda a largura disponível */
+    max-width: 800px;      /* Define um tamanho máximo para o vídeo não ficar gigante em monitores enormes */
+    aspect-ratio: 16 / 9;  /* Mantém a proporção padrão de vídeos do YouTube (Widescreen) */
+    border-radius: 8px;    /* Opcional: deixa as bordas do vídeo arredondadas para combinar com o layout */
+}
+aside > ul {
+    columns: 2; /* Divide a lista em 2 colunas */
+    list-style-type: '\2714\00A0'; /* Remove os marcadores padrão da lista */
+}
